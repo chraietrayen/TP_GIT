@@ -3,59 +3,145 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffeaae;  
+    background-image: url('black-background.avif'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f0f0f0; 
+    color: #333; 
 }
 
 header {
     background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    color: #f32121;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 36px; 
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    font-weight: bold;
+
+
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
+    background-image: url(gray-painted-background_53876-94041.avif);
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #efeaea;
     text-decoration: none;
+    font-size: 18px;
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.2);
+
+}
+
+section h2 {
+    background-color: #656262;
+    background-image: url('gray-painted-background_53876-94041.avif');
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; 
+    transition: background-color 0.3s ease;
+    background-size: cover;
+
 }
 
 .project {
     margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.project img {
+    width: 100%; 
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+
+
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #35424a;
     color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+
 }
-button{
-    background-color: #DFF2EB;
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    background-color: #35424a;
+    background-size: cover;
+
 }
-#mail{
-    width: 2%;
-    height: 2%;
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px; 
+    transition: color 0.3s ease;
+    color: #fff;
+    
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #fff;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-primary:hover {
+    background-color: #0062cc; 
+
+}
+
+#mail, #phone, #twitter, #location, #facebook {
+    width: 24px; 
+    height: 24px; 
+    background-color: #fff;
+
 }
